@@ -1,0 +1,39 @@
+{
+  "name": "opencode-pass-file-as-path",
+  "version": "0.1.0",
+  "description": "OpenCode V2 server plugin that keeps selected file attachments as literal @path text instead of materializing them.",
+  "type": "module",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "attachments",
+    "prefab",
+    "unity"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --import tsx --test",
+    "typecheck": "tsc --noEmit",
+    "check": "npm test && npm run typecheck",
+    "prepublishOnly": "npm run check"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": "^2.2.5"
+  },
+  "devDependencies": {
+    "@opencode/plugin": "2.2.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}
