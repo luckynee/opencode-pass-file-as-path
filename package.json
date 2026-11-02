@@ -7,6 +7,10 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luckynee/opencode-pass-file-as-path.git"
+  },
   "keywords": [
     "opencode",
     "opencode-plugin",
@@ -35,5 +39,8 @@
     "@opencode/plugin": "2.2.5",
     "tsx": "^4.23.15",
     "typescript": "^5.9.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
   }
 }
